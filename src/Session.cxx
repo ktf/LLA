@@ -91,7 +91,7 @@ Session& Session::operator=(Session&& other)
   mCardId = other.mCardId;
   mParams = other.mParams;
   mLockParams = other.mLockParams;
-  mLock = std::move(mLock);
+  mLock = std::move(other.mLock);
   mIsStarted = other.mIsStarted;
   return *this;
 }
